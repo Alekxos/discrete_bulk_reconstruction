@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drb"
+version = "0.0.1"
+requires-python = ">=3.9"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["drb"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
